@@ -61,10 +61,24 @@
             margin: 20px 0;
             text-align: center;
         }
-        .youtubeVideo {
-            display: flex;
-            justify-content: center;
-            
+        
+            .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+/* Ensures the iframe fills the container */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
         }
          .styled-image {
             width: 150px; /* Set the width of the image */
@@ -92,7 +106,7 @@
         </header>
 
         <!-- YouTube Video -->
-        <div class="youtubeVideo">
+        <div class="video-container">
             <iframe width="1236" height="695" src="https://www.youtube.com/embed/KgWvmhYM9V0" title="Jason Belland, Alteryx, &amp; Matthew Dvortsyn, Student at Camden County College | Alteryx Inspire 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
 
         <section>
