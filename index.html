@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About-me</title>
-    <!-- Use relative path for favicon -->
-    <link rel="icon" href="question mark.ico" type="image/x-icon" />
+    <!-- Absolute path favicon (may not work in browsers due to security restrictions) -->
+    <link rel="icon" href="file:///C:/Users/mattd/OneDrive/Desktop/HTML-CSS/about-me/question-mark.ico" type="image/x-icon" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,20 +39,35 @@
             font-size: 1.8em;
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
+            text-align: center;
         }
         section p {
             font-size: 1.1em;
             line-height: 1.6em;
+            text-align: center;
+        }
+        .links {
+            text-align: center; /* center all links and images */
         }
         .links a {
             color: #1a0dab;
             text-decoration: none;
-            display: inline-block;
-            margin: 5px 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 10px;
             vertical-align: middle;
+            font-size: 1.2em;
         }
         .links a:hover {
             text-decoration: underline;
+        }
+        .links img {
+            width: 100px;
+            height: auto;
+            margin-right: 12px;
+            vertical-align: middle;
+            display: inline-block;
         }
         figure {
             text-align: center;
@@ -61,7 +76,7 @@
         figure img {
             width: 200px;
             height: auto;
-            border-radius: 25%;
+            border-radius: 50%;
         }
         figure figcaption {
             font-size: 0.95em;
@@ -95,14 +110,6 @@
             margin-bottom: 20px;
         }
 
-        /* Icons for LinkedIn and Resume links */
-        .links img {
-            height: 24px;
-            width: 24px;
-            margin-right: 8px;
-            vertical-align: middle;
-        }
-
         footer {
             text-align: center;
             padding: 20px 0;
@@ -116,6 +123,7 @@
             <h1>Matthew Dvortsyn</h1>
             <p>Data Scientist</p>
         </header>
+
         <!-- Photo section -->
         <figure>
             <img src="08162024.jpg" alt="A photo of me from August 2024" />
@@ -230,7 +238,6 @@
                     <img 
                         src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" 
                         alt="LinkedIn" 
-                        style="height:48px; width:48px; vertical-align: middle; margin-right: 8px;"
                     />
                     My LinkedIn Profile
                 </a>
@@ -245,7 +252,6 @@
                     <img 
                         src="resume.png" 
                         alt="Resume" 
-                        style="height:24px; width:24px; vertical-align: middle; margin-right: 8px;"
                     />
                     My Resume
                 </a>
