@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew Dvortsyn - Data Scientist</title>
+    <title>About-me</title>
     <!-- Add the link to the favicon -->
-    <link rel="icon" href="paper.ico" type="image/x-icon">
+    <link rel="icon" href="C:/Users/mattd/OneDrive/Desktop/HTML-CSS/about-me/paper.ico" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -53,43 +53,35 @@
         .links a:hover {
             text-decoration: underline;
         }
-        .linkedin-logo {
-            width: 50px; /* Adjust the size as needed */
-            height: auto;
-        }
         .tableauViz {
             margin: 20px 0;
             text-align: center;
         }
-        
-            .video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-}
-
-/* Ensures the iframe fills the container */
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-        
-         .styled-image {
-            width: 150px; /* Set the width of the image */
-            height: auto; /* Maintain aspect ratio */
-            border: 5px solid black; /* Set the border size and color */
-            border-radius: 10px; /* Optional: Add rounded corners */
+        .youtubeVideo {
+            display: flex;
+            justify-content: center;
+            
         }
         footer {
             text-align: center;
             padding: 20px 0;
             color: #777;
+        }
+        figure {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        figure img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        figure figcaption {
+            font-size: 0.95em;
+            color: #555;
+            margin-top: 8px;
         }
     </style>
 </head>
@@ -98,34 +90,39 @@
         <header>
             <h1>Matthew Dvortsyn</h1>
             <p>Data Scientist</p>
-            <br>
-            <p>
-<a href="https://www.linkedin.com/in/mattdvortsyn" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-logo">
-    </a>            </p>
         </header>
-
-        <!-- YouTube Video -->
-        <div class="video-container">
-            <iframe width="1236" height="695" src="https://www.youtube.com/embed/KgWvmhYM9V0" title="Jason Belland, Alteryx, &amp; Matthew Dvortsyn, Student at Camden County College | Alteryx Inspire 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+        <!-- Photo section -->
+            <figure style="text-align: center;">
+                <img src="08162024.jpg" alt="A photo of me from August 2024" style="width: 200px; height: auto; border-radius: 50%;">
+                <figcaption style="font-size: 0.95em; color: #555; margin-top: 8px;">A photo of me from August 2024</figcaption>
+            </figure>
 
         <section>
             <h2>About Me</h2>
             <p>
-                Welcome to my online resume! I am currently pursuing a Bachelors of Science in Data Science from Rutgers University. I have extensive experience in data analysis, visualization, & machine learning using R, SQL, Python, Alteryx & Tableau. Here, you can view my Tableau Public portfolio showcasing some of my data visualizations, add me on LinkedIn, or view & download my Resume.
+                I'm a 24-year-old data science student at Rutgers University with a passion for the outdoors. Some of my favorite memories involve skiing, hiking, camping, or canoeing (with good company of course). I am also really into music of all kinds, from old-school rock-n-roll to 90's hip-hop. My family is from a Jewish background with roots in the former Soviet Union, which offers a unique persepctive to how I see the world. Above all, I try to bring humor into everyday life; because if you can laugh, even the tough days get a little easier.            
             </p>
         </section>
 
-    
         <section>
             <h2>My Portfolio</h2>
+            <!-- YouTube Video -->
             <p>
-                Take a look at some of the data visualizations I have created using Alteryx & Tableau:
+                Not to brag, but I was invited to speak as a panelist at Alteryx Inspire 2024.
+            </p>
+        <div class="youtubeVideo">
+            <iframe width="1236" height="695" src="https://www.youtube.com/embed/KgWvmhYM9V0" title="Jason Belland, Alteryx, &amp; Matthew Dvortsyn, Student at Camden County College | Alteryx Inspire 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+
+            <p>
+                Here are a couple of the visualizations that I have made using Alteryx and Tableau:
             </p>
 
             <!-- Tableau Visualization 1 -->
+            <p>
+                A report on NYC's effort to reduce the number of needles on public park grounds and an insight into the efficacy of safe disposal stations.
+            </p>
             
-            <div class='tableauPlaceholder' id='viz1718049011979' style='position: relative'>
+            <div class='tableauPlaceholder' id='viz1718049011979' style='position: center'>
             <noscript>
                 <a href='#'>
                     <img alt='NYC Syringe Cleanup Report ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYC_Syringe_Cleanup&#47;NYCSyringeCleanupReport&#47;1_rss.png' style='border: none' />
@@ -143,23 +140,39 @@
                     </div>                
                     <script type='text/javascript'>                    var divElement = document.getElementById('viz1718049011979');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);
             </script>
-            <br>
-            <br>
             <!-- Tableau Visualization 2 -->
+            <p>
+                A report on vacancies within homeless shelters alognside the estimated homeless population of each borough; providing insight into where additional aid might want to be focused
+            </p>
             <div class='tableauPlaceholder' id='viz1718049227878' style='position: relative'><noscript><a href='#'><img alt='NYC Homelessness ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYC_Homelessness&#47;NYCHomelessness&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NYC_Homelessness&#47;NYCHomelessness' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NYC_Homelessness&#47;NYCHomelessness&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1718049227878');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
             <!-- Add more visualizations as needed -->
 
         </section>
 
+
         <section>
-            <h2>View & Download my Resume</h2>
-            <a href="https://drive.google.com/file/d/1kpTVmUOIqaLFifzkeRwE-jmfrF9y6IvK/view?usp=sharing">
-        <img src="paper.ico" alt="Resume Link" class="styled-image">
-    </a>
+            <h2>LinkedIn</h2>
+            <p>
+                Connect with me on LinkedIn to stay updated with my professional journey:
+            </p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/mattdvortsyn" target="_blank">My LinkedIn Profile</a>
+            </div>
         </section>
+        
+        <section>
+            <h2>Resume</h2>
+            <p>
+                You can view or download my resume by clicking the link below:
+            </p>
+            <div class="links">
+                <a href="https://drive.google.com/file/d/13vWy0wcFIRmK3Midls3Z8j1A-DTK9RMX/view?usp=sharing" target="_blank">My Resume</a>
+            </div>
+        </section>
+
         <footer>
-            <p>&copy; 2024 Matthew Dvortsyn. All rights reserved.</p>
+            <p>&copy; 2025 Matthew Dvortsyn. All rights reserved.</p>
         </footer>
     </div>
 </body>
